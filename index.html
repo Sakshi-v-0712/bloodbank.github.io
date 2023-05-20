@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Integrated Blood Database</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Outfit&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="heroText">
+
+                <p class="text-white mt-5 mb-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                    SAVE SOMEONE’S LIFE, REGISTER FOR BLOOD DONATION !
+                </p>
+
+                <form class="search-bar">
+                    <input type="text" placeholder="Search for blood type or location">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            <div class="overlay"></div>
+        </section>
+
+
+        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+            <div class="container">
+                <div class=logo>
+                    <a href=index.html><img src=logo.png alt=“logo”></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Database</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">Nearest Blood Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">About Us / Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="section-padding pb-0" id="about">
+            <div class="container mb-5 pb-lg-5">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="mb-3" data-aos="fade-up">Let us donate...</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light" id="news">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">Nearest Blood Bank</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+                            In case of emergency, it's important to know the location of the nearest blood bank. This feature allows users to search for the nearest blood bank and access important information such as location, hours, and contact information. This can be a crucial
+                            resource in times of need.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <img src="images/blood-bank.jpg" class="img-fluid rounded shadow-lg" alt="Blood Bank" data-aos="fade-up" data-aos-delay="500">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="contact">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <h2 class="mb-5 text-center" data-aos="fade-up">About Us / Contact Us</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <p class="me-4" data-aos="fade-up" data-aos-delay="300">
+                            Our mission is to save lives by creating a centralized and efficient blood donation system. We believe that everyone can make a difference, and we strive to make the process of donating blood as easy and accessible as possible. Contact us today to learn
+                            more about our organization and how you can get involved.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <form id="contact-form" class="contact-form" method="POST" data-aos="fade-up" data-aos-delay="500">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Name" required="">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" name="message" placeholder="Message" required=""></textarea>
+                            </div>
+
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <p class="text-center">
+                            <a href="#hero" class="text-secondary text-decoration-none me-3">Home</a>
+                            <a href="#about" class="text-secondary text-decoration-none me-3">Register</a>
+                            <a href="#portfolio" class="text-secondary text-decoration-none me-3">Database</a>
+                            <a href="#news" class="text-secondary text-decoration-none me-3">News</a>
+                            <a href="#contact" class="text-secondary text-decoration-none">Contact Us</a>
+                        </p>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <p class="text-center text-secondary">&copy; 2023 Sakshi & Anitesh for Synopsium . All Rights Reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

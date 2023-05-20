@@ -1,0 +1,520 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;700;900&display=swap');
+
+/* Global */
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    /* for Safari and Chrome */
+    -moz-transition: all 0.3s ease;
+    /* for Firefox */
+    -o-transition: all 0.3s ease;
+    /* for Opera */
+}
+
+nav .navbar-brand {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+nav .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+nav .navbar-nav .nav-link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link.active {
+    background-color: #f44336;
+    color: #fff;
+}
+
+nav.shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hero Section */
+
+
+/* Hero Section */
+
+#hero {
+    position: relative;
+    min-height: 100vh;
+    /* Add a linear gradient to the background color */
+    background: linear-gradient(to right, #ffcccc, #ffb3b3);
+    background-image: url("https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ymxv");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#hero .heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    margin: 20px;
+}
+
+#hero .heroText p {
+    /* Change the font-family property */
+    font-family: "Outfit", sans-serif;
+    /* Use a fallback font */
+    font-family: "Outfit", "Arial", sans-serif;
+    font-weight: bold;
+    /* Reduce the font-size property */
+    font-size: 32px;
+    margin-top: 30px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    color: #f44336;
+    transition: all .3s ease;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add some contrast and brightness filters */
+    filter: contrast(150%) brightness(120%);
+    z-index: -1;
+}
+
+
+/* Add some animation effects */
+
+#hero .heroText:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+/* Search Bar */
+
+.search-bar {
+    /* Remove the position and transform properties */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add a margin-top property */
+    margin-top: 40px;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-bar button[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+/* About Section */
+
+#about {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#about .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#about .about-content .left {
+    flex-basis: 45%;
+    margin-right: 5%;
+}
+
+#about .about-content .right {
+    flex-basis: 45%;
+    margin-left: 5%;
+}
+
+#about .about-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+#about .about-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#about .about-content .btn {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #f44336;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+#about .about-content .btn:hover {
+    background-color: #333;
+}
+
+
+/* Services Section */
+
+#services {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+
+#services .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#services .services-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services .services-content .service-box {
+    flex-basis: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+#services .services-content .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#services .services-content .service-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f44336;
+    margin-bottom: 20px;
+}
+
+#services .services-content .service-box p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555;
+}
+
+
+/* Contact Section */
+
+#contact {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+#contact .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#contact .form-container {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+}
+
+#contact .form-container h2 {
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#contact .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#contact .form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact textarea.form-control {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contact button[type="submit"] {
+    display: inline-block;
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #fff;
+    color: #f44336;
+}
+
+#contact .form-message {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
+
+#contact .form-message.success {
+    color: #4CAF50;
+}
+
+#contact .form-message.error {
+    color: #F44336;
+}
+
+@media(max-width: 767px) {
+    #contact .form-control {
+        width: 100%;
+    }
+}
+
+
+/*Footer */
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+footer a {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    background-color: #f44336;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    footer a {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Responsive media queries */
+
+@media(max-width: 991px) {
+    nav .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    #hero .heroText h1 {
+        font-size: 48px;
+    }
+    #hero .heroText p {
+        font-size: 20px;
+    }
+    #services .box {
+        margin-bottom: 30px;
+    }
+    #about .about-img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #about .about-text {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 767px) {
+    nav {
+        padding: 10px 0;
+    }
+    @media(max-width: 576px) {
+        nav .navbar-brand {
+            font-size: 20px;
+        }
+        nav .navbar-nav .nav-link {
+            font-size: 16px;
+        }
+        #hero .heroText h1 {
+            font-size: 48px;
+        }
+        #hero .heroText p {
+            font-size: 18px;
+        }
+        #about .about-text h2 {
+            font-size: 28px;
+        }
+        #services .service-item {
+            margin-bottom: 30px;
+        }
+        #portfolio .portfolio-item .portfolio-info {
+            bottom: -50px;
+        }
+        #portfolio .portfolio-item .portfolio-info h4 {
+            font-size: 18px;
+        }
+        #portfolio .portfolio-item .portfolio-info p {
+            font-size: 14px;
+        }
+        #portfolio .portfolio-item:hover .portfolio-info {
+            bottom: 0;
+        }
+        #team .member-info {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        #team .member:hover .member-info {
+            bottom: 0;
+            opacity: 1;
+        }
+        #testimonials .testimonial-item {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #testimonials .testimonial-item img {
+            max-width: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        #testimonials .testimonial-item h3 {
+            font-size: 18px;
+        }
+        #testimonials .testimonial-item h4 {
+            font-size: 14px;
+        }
+        #clients .client-item {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        #clients .client-item img {
+            max-width: 100%;
+        }
+        #contact .form-container {
+            padding: 30px;
+        }
+    }
+}
